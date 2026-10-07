@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-script: "Alex Brush", cursive;
+}
+
+@keyframes flameFlicker {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.9));
+  }
+  25% {
+    transform: scale(1.08, 0.95) rotate(2deg);
+    filter: drop-shadow(0 0 12px rgba(245, 158, 11, 0.95));
+  }
+  50% {
+    transform: scale(0.96, 1.05) rotate(-2deg);
+    filter: drop-shadow(0 0 9px rgba(249, 115, 22, 0.9));
+  }
+  75% {
+    transform: scale(1.04, 1.02) rotate(1deg);
+    filter: drop-shadow(0 0 14px rgba(251, 191, 36, 1));
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes shakeError {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+.animate-flame {
+  animation: flameFlicker 1.4s ease-in-out infinite alternate;
+  transform-origin: bottom center;
+}
+
+.animate-float {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+.animate-shake {
+  animation: shakeError 0.4s ease-in-out;
+}

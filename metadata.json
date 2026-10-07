@@ -1,0 +1,6 @@
+{
+  "name": "Jaaneman - Birthday Surprise for My Wife",
+  "description": "A deeply emotional and trending birthday surprise experience with interactive countdown, memory gallery, heartfelt Roman Urdu wishes, love letters, and candle blowing celebration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
