@@ -91,15 +91,13 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, onAddPhoto }
             <div
               key={photo.id}
               onClick={() => setActivePhoto(photo)}
-              className={`group relative bg-stone-900/40 hover:bg-stone-900/80 border border-stone-800 hover:border-rose-800/60 rounded-2xl p-3 sm:p-4 transition-all duration-300 cursor-pointer flex flex-col justify-between shadow-lg hover:shadow-rose-950/30 ${
-                isLarge ? 'sm:col-span-2 sm:row-span-2' : ''
-              }`}
+              className={`group relative bg-stone-900/40 hover:bg-stone-900/80 border border-stone-800 hover:border-rose-800/60 rounded-2xl p-3 sm:p-4 transition-all duration-300 cursor-pointer flex flex-col justify-between shadow-lg hover:shadow-rose-950/30 ${isLarge ? 'sm:col-span-2 sm:row-span-2' : ''
+                }`}
             >
               {/* Photo Frame Container with styled fallback */}
               <div
-                className={`relative w-full rounded-xl overflow-hidden bg-stone-950 ${
-                  isLarge ? 'aspect-4/3 sm:aspect-16/10' : 'aspect-4/3'
-                }`}
+                className={`relative w-full rounded-xl overflow-hidden bg-stone-950 ${isLarge ? 'aspect-4/3 sm:aspect-16/10' : 'aspect-4/3'
+                  }`}
               >
                 <img
                   src={photo.url}
